@@ -99,11 +99,23 @@ header h1 {
 .qupon .detail h2.title {
   position: relative;
 }
+.qupon .detail p.now-share {
+  margin: 11px 0 0 0;
+}
 .qupon .detail img {
   width: 100%;
   padding: 8px;
   border-radius: 13px;
   -webkit-border-radius: 13px;
+}
+.qupon .detail .success-discount {
+  padding: 0 20px;
+}
+.qupon .detail .success-discount p.pre-share {
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
 }
 .qupon .detail .success-discount p.expire span.head {
   font-size: 11px;
@@ -126,7 +138,7 @@ header h1 {
   margin-top: 41px;
 }
 .qupon .share {
-  padding: 30px;
+  padding: 0 30px;
 }
 .qupon .share .fa-twitter:before {
   margin-right: 4px;
@@ -136,6 +148,20 @@ header h1 {
   color: gray;
   margin-bottom: 30px;
   display: block;
+}
+.qupon .share span.supplementary.top {
+  margin-bottom: 0;
+}
+
+.sankaku {
+  width: 0;
+  height: 0;
+  border-top: 0 solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 16px solid white;
+  border-left: 12px solid transparent;
+  position: relative;
+  left: 10px;
 }
 
 .btn-twitter {

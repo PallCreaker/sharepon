@@ -1,4 +1,5 @@
 @import 'setting';
+
 header{
     background-color: #FFC2C2 !important;
     h1{color: white !important;letter-spacing: 1px;}
@@ -56,6 +57,7 @@ header{
     }
     .detail{
         h2.title{position: relative;}
+        p.now-share{margin: 11px 0 0 0;}
         img{
             width: 100%;
             padding: 8px;
@@ -63,6 +65,13 @@ header{
             -webkit-border-radius:13px;
         }
         .success-discount{
+            padding: 0 20px;
+            p.pre-share{
+                background-color:white;
+                padding:10px;
+                border-radius: 8px;
+                -webkit-border-radius: 8px;
+            }
             p.expire{ span.head{font-size: 11px;letter-spacing: 1px}}
         }
         .use-copon{
@@ -87,7 +96,7 @@ header{
         }
     }
     .share{
-        padding: 30px;
+        padding: 0 30px;
         .fa-twitter:before {
             margin-right: 4px;
         }
@@ -96,10 +105,22 @@ header{
             color: gray;
             margin-bottom: 30px;
             display: block;
+            &.top{
+                margin-bottom:0;
+            }
         }
     }
 }
-
+.sankaku{
+    width: 0;
+    height: 0;
+    border-top: 0 solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 16px solid white;
+    border-left: 12px solid transparent;
+    position: relative;
+    left: 10px;
+}
 
 .btn-twitter {
     padding: 10px 0;
