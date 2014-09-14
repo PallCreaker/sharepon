@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- Full Screen mode on when mobile app bookmark -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <!-- About apple-mobile-web-app-status-bar-style
+    @param content = default, black(opacity black), black-translucent(semi-translucent)
+    @source https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html
+    -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- TODO: アイコンを設置 -->
+    <link rel="icon" sizes="192x192" href="icon.png">
+
+    <title>SharePon</title>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link data-turbolinks-track="true" href="ratchet-2.0.2/dist/css/ratchet.min.css" media="all" rel="stylesheet" />
+    <!-- <link data-turbolinks-track="true" href="ratchet-2.0.2/dist/css/ratchet-theme-android.min.css" media="all" rel="stylesheet" /> -->
+    <link data-turbolinks-track="true" href="css/main.css" media="all" rel="stylesheet" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script data-turbolinks-track="true" src="ratchet-2.0.2/dist/js/ratchet.min.js"></script>
+</head>
+<body>
+    <!-- Make sure all your bars are the first things in your <body> -->
+    <header class="bar bar-nav">
+        <button class="btn btn-link btn-nav pull-left"><span class="icon icon-bars"></span></button>
+        <h1 class="title">SharePon</h1>
+        <button class="btn btn-link btn-nav pull-right"><a href="javascript:history.go(0)"><span class="icon icon-refresh"></span></a></button>
+    </header>
+    <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+    <div class="content">
+        <div class="qupon">
+            <div class="detail">
+                <h2 class="title shop-name">表参道DeNA店 <span class="q-icon"></span> </h2>
+                <img src="img/girl.jpg" alt="">
+                <div class="share-discount">
+                    <p>
+                        <span class="head">その場のシェア特典！</span><br>
+                        10％ OFF!! 
+                        <span class="sub"></span>
+                    </p>
+                </div>
+                <div class="success-discount">
+                   <p>
+                    <span class="head">さらに友達が使って特典ゲット！！</span><br>
+                    一人あなたのクーポンを使ってもらえる事に、5％追加！！
+                    <span class="sub"></span>
+                    </p>
+                </div>
+            </div>
+            <div class="share">
+                <a class="btn btn-twitter btn-block" href="https://qiita.com/auth/twitter" track="click">
+                    <i class="fa fa-twitter"></i> シェアする
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
