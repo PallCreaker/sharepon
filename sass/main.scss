@@ -1,4 +1,9 @@
 @import 'setting';
+header{
+    background-color: #FFC2C2 !important;
+    h1{color: white !important;letter-spacing: 1px;}
+}
+.bar .btn .icon {color: white}
 .content{background-image: url('../img/qupon_bg.png');}
 .qupon{
     .detail{
@@ -38,6 +43,7 @@
             width: 100%;
             padding: 8px;
             border-radius: 13px;
+            -webkit-border-radius:13px;
         }
     }
     
@@ -45,6 +51,10 @@
         padding: 30px;
         .fa-twitter:before {
             margin-right: 4px;
+        }
+        span.supplementary {
+            font-size: 1px;
+            color: gray;
         }
     }
 }

@@ -42,6 +42,18 @@
   clear: both;
 }
 
+header {
+  background-color: #FFC2C2 !important;
+}
+header h1 {
+  color: white !important;
+  letter-spacing: 1px;
+}
+
+.bar .btn .icon {
+  color: white;
+}
+
 .content {
   background-image: url("../img/qupon_bg.png");
 }
@@ -82,12 +94,17 @@
   width: 100%;
   padding: 8px;
   border-radius: 13px;
+  -webkit-border-radius: 13px;
 }
 .qupon .share {
   padding: 30px;
 }
 .qupon .share .fa-twitter:before {
   margin-right: 4px;
+}
+.qupon .share span.supplementary {
+  font-size: 1px;
+  color: gray;
 }
 
 .btn-twitter {
